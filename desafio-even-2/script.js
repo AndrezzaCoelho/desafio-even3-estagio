@@ -3,8 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('formularioINscroção');
     const registrantsList = document.getElementById('listaDeInnscrição');
 
-  
     let registrants = [];
+  
+    const checkAvailability = (name, email) => {
+        
+        const nameExists = registrants.some(person => person.name.toLowerCase() === name.toLowerCase());
+        const emailExists = registrants.some(person => person.email.toLowerCase() === email.toLowerCase());
+
+        return {
+            nameExists: nameExists, 
+            emailExists: emailExists
+        };
+    };
 
     
     const renderList = () => {
@@ -16,27 +26,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-   
+    
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
-       
         const name = form.name.value.trim();
         const email = form.email.value.trim();
-
 
         if (!name || !email || !email.includes('@')) {
             alert('Por favor, preencha todos os campos corretamente. O e-mail deve conter "@"');
             return;
+        }  
+        
+    
+        const { nameExists, emailExists } = checkAvailability(name, email);
+
+        if (nameExists) {
+            alert('Este nome já está em uso. Por favor, escolha outro nome.');
+            return;
         }
 
-        
+        if (emailExists) {
+            alert('Este e-mail já está em uso. Por favor, escolha outro e-mail.');
+            return;
+        }
+
+       
         registrants.push({ name, email });
-
-        
         form.reset();
-
-   
         renderList();
     });
 });
