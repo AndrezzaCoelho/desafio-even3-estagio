@@ -26,14 +26,14 @@ Essa abordagem é eficiente, pois a lista é percorrida apenas duas vezes, indep
 Para rodar o código, você precisa ter o **Node.js** instalado. Basta abrir o terminal, navegar até a pasta do projeto e executar o seguinte comando:
 
 ```bash
-node numerosUnicos.js
-🎬 Parte 2 – Comunicação Técnica | Busca Binária
-O desafio
+### 🎬 Parte 2 – Comunicação Técnica | Busca Binária
+
+#### O desafio
+
 Gravar um vídeo explicando o que é e como funciona a Busca Binária.
 
-Minha solução
+#### Minha solução
+
 A solução para a segunda parte do desafio está disponível neste vídeo, onde explico o conceito e a lógica da busca binária.
 
-Vídeo - Explicação de Busca Binária
-
-https://drive.google.com/file/d/1JTzifdETde_rWkRHX3r7Dd4o7PL3Jv6O/view?usp=drive_link
+[Vídeo - Explicação de Busca Binária](https://drive.google.com/file/d/1JTzifdETde_rWkRHX3r7Dd4o7PL3Jv6O/view?usp=drive_link)
