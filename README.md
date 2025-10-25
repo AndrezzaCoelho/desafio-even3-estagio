@@ -1,39 +1,68 @@
-# Teste Técnico - Estágio em Desenvolvimento | Even3
+# 🚀 Sistema de Cadastro e Controle de Eventos
 
-Este repositório contém a solução para o teste técnico de estágio em desenvolvimento da Even3.
+Uma aplicação web completa (CRUD) para gerenciar eventos, demonstrando habilidades em desenvolvimento Fullstack.
+
+## ✨ Funcionalidades
+
+Este projeto implementa as seguintes funcionalidades principais:
+
+* **[Funcionalidade 1]:** (Ex: Cadastro de novos eventos com campos para título, data e descrição.)
+* **[Funcionalidade 2]:** (Ex: Visualização de uma lista paginada ou filtrada de todos os eventos cadastrados.)
+* **[Funcionalidade 3]:** (Ex: Edição e exclusão de eventos existentes.)
+* **[Funcionalidade 4]:** (Ex: Validação de formulários e tratamento de erros.)
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando uma stack moderna, abrangendo tanto o Front-end quanto o Back-end.
+
+### Front-end
+* **[Tecnologia Front-end]** (Ex: React, Vue.js, HTML5/CSS3)
+* **[Biblioteca de Estilização]** (Ex: Tailwind CSS, Styled Components, Bootstrap)
+
+### Back-end
+* **[Linguagem de Programação]** (JavaScript)
+* **[Framework Back-end]** (Ex: Node.js/Express)
+
+### Banco de Dados
+* **[Banco de Dados]** (MySQL)
 
 
-### 🧠 Parte 1 – Lógica | Números Únicos
 
-#### O desafio
+## 💻 Como Executar Localmente
 
-Escrever uma função que recebe uma lista de números e retorna apenas os que não se repetem.
-* Exemplo: `[1, 2, 2, 3, 4, 4, 5]` -> `[1, 3, 5]`
+Siga os passos para rodar o projeto em sua máquina.
 
-#### Minha solução
+### Pré-requisitos
 
-A solução foi implementada em JavaScript e está no arquivo `numerosUnicos.js`.
+Certifique-se de ter instalado:
+* [Ferramenta 1] (Ex: Node.js e npm/yarn)
+* [Ferramenta 2] (Ex: Docker - Se aplicável)
 
-Para resolver o problema, utilizei uma abordagem com dois passos principais:
+### 1. Clonagem e Configuração
 
-1.  **Contagem de frequência:** Primeiro, percorri a lista de entrada para contar quantas vezes cada número aparece. Para isso, usei um objeto onde a chave é o número e o valor é a sua contagem.
-2.  **Filtragem:** Em seguida, percorri a lista novamente. Dessa vez, adicionei a uma nova lista apenas os números cuja contagem foi exatamente **1**.
+1.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/AndrezzaCoelho/desafio-even3-estagio.git](https://github.com/AndrezzaCoelho/desafio-even3-estagio.git)
+    cd desafio-even3-estagio
+    ```
+2.  Instale as dependências:
+    ```bash
+    # Exemplo
+    npm install
+    ```
 
-Essa abordagem é eficiente, pois a lista é percorrida apenas duas vezes, independentemente do seu tamanho.
+3.  Configure as variáveis de ambiente (Se necessário, crie um arquivo `.env`):
+    ```
+    # Exemplo: Variável de conexão com o banco de dados
+    DB_URL="[SUA_STRING_DE_CONEXÃO]"
+    PORT=3000
+    ```
 
-#### Como executar
+### 2. Inicialização
 
-Para rodar o código, você precisa ter o **Node.js** instalado. Basta abrir o terminal, navegar até a pasta do projeto e executar o seguinte comando:
-
+Inicie a aplicação:
 ```bash
-### 🎬 Parte 2 – Comunicação Técnica | Busca Binária
-
-#### O desafio
-
-Gravar um vídeo explicando o que é e como funciona a Busca Binária.
-
-#### Minha solução
-
-A solução para a segunda parte do desafio está disponível neste vídeo, onde explico o conceito e a lógica da busca binária.
-
-[Vídeo - Explicação de Busca Binária](https://drive.google.com/file/d/1JTzifdETde_rWkRHX3r7Dd4o7PL3Jv6O/view?usp=drive_link)
+# Exemplo
+npm run dev
+# ou
+node server.js
