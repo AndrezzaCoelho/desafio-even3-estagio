@@ -1,68 +1,47 @@
 # 🚀 Sistema de Cadastro e Controle de Eventos
 
-Uma aplicação web completa (CRUD) para gerenciar eventos, demonstrando habilidades em desenvolvimento Fullstack.
+Uma aplicação web completa (CRUD - Criar, Ler, Atualizar, Deletar) para gerenciar eventos, desenvolvida utilizando apenas tecnologias **Front-end** e demonstrando proficiência em **JavaScript**.
 
 ## ✨ Funcionalidades
 
-Este projeto implementa as seguintes funcionalidades principais:
+Este projeto implementa as seguintes funcionalidades principais, utilizando o **LocalStorage** do navegador para persistência de dados:
 
-* **[Funcionalidade 1]:** (Ex: Cadastro de novos eventos com campos para título, data e descrição.)
-* **[Funcionalidade 2]:** (Ex: Visualização de uma lista paginada ou filtrada de todos os eventos cadastrados.)
-* **[Funcionalidade 3]:** (Ex: Edição e exclusão de eventos existentes.)
-* **[Funcionalidade 4]:** (Ex: Validação de formulários e tratamento de erros.)
+* **Cadastro de Eventos:** Formulário para inclusão de novos eventos, com campos como Título, Data, Horário e Descrição.
+* **Visualização e Listagem:** Exibição de todos os eventos cadastrados em uma lista interativa.
+* **Edição e Exclusão:** Possibilidade de modificar ou remover eventos existentes de forma simples.
+* **Validação de Formulários:** Tratamento de entrada do usuário para garantir a integridade dos dados.
 
 ## 🛠️ Tecnologias Utilizadas
 
-Este projeto foi desenvolvido utilizando uma stack moderna, abrangendo tanto o Front-end quanto o Back-end.
+Este projeto foi desenvolvido com uma stack puramente Front-end:
 
 ### Front-end
-* **[Tecnologia Front-end]** (Ex: React, Vue.js, HTML5/CSS3)
-* **[Biblioteca de Estilização]** (Ex: Tailwind CSS, Styled Components, Bootstrap)
+* **HTML:** Estrutura semântica e acessível.
+* **CSS:** Estilização moderna e responsiva.
+* **JavaScript:** Lógica de aplicação, manipulação do DOM e persistência de dados (via `localStorage`).
 
-### Back-end
-* **[Linguagem de Programação]** (JavaScript)
-* **[Framework Back-end]** (Ex: Node.js/Express)
-
-### Banco de Dados
-* **[Banco de Dados]** (MySQL)
-
-
+### Persistência de Dados
+* **LocalStorage:** Utilizado para simular a persistência dos dados diretamente no navegador do usuário.
 
 ## 💻 Como Executar Localmente
 
-Siga os passos para rodar o projeto em sua máquina.
+Siga os passos para rodar o projeto em sua máquina. Por ser um projeto Front-end sem servidor, é extremamente fácil de iniciar.
 
-### Pré-requisitos
-
-Certifique-se de ter instalado:
-* [Ferramenta 1] (Ex: Node.js e npm/yarn)
-* [Ferramenta 2] (Ex: Docker - Se aplicável)
-
-### 1. Clonagem e Configuração
+### 1. Clonagem do Repositório
 
 1.  Clone o repositório:
     ```bash
     git clone [https://github.com/AndrezzaCoelho/desafio-even3-estagio.git](https://github.com/AndrezzaCoelho/desafio-even3-estagio.git)
     cd desafio-even3-estagio
     ```
-2.  Instale as dependências:
-    ```bash
-    # Exemplo
-    npm install
-    ```
-
-3.  Configure as variáveis de ambiente (Se necessário, crie um arquivo `.env`):
-    ```
-    # Exemplo: Variável de conexão com o banco de dados
-    DB_URL="[SUA_STRING_DE_CONEXÃO]"
-    PORT=3000
-    ```
 
 ### 2. Inicialização
 
-Inicie a aplicação:
-```bash
-# Exemplo
-npm run dev
-# ou
-node server.js
+Basta abrir o arquivo principal no seu navegador.
+
+1.  Localize o arquivo **`index.html`** (ou o nome do seu arquivo HTML principal) no diretório clonado.
+2.  Clique duas vezes no arquivo **`index.html`** para abri-lo automaticamente no seu navegador padrão.
+
+> **Dica:** Para um desenvolvimento mais robusto, você pode usar a extensão "Live Server" no VS Code, que atualiza a página automaticamente ao salvar as alterações.
+
+---
